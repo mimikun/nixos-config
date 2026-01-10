@@ -15,8 +15,8 @@
     ./packages.nix
   ];
 
-  wsl.enable = true;
-  wsl.defaultUser = "mimikun";
+  #wsl.enable = true;
+  #wsl.defaultUser = "mimikun";
 
   # User settings
   users.users.mimikun = {
@@ -26,13 +26,13 @@
   };
 
   # Base packages
-  environment.systemPackages = with pkgs; [
-    neovim
-    vim
-    git
-    wget
-    curl
-  ];
+  #environment.systemPackages = with pkgs; [
+  #  neovim
+  #  vim
+  #  git
+  #  wget
+  #  curl
+  #];
 
   # Enable experimental-features: "nix-command", "flakes"
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
