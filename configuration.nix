@@ -15,6 +15,8 @@
     ./packages.nix
   ];
 
+  networking.hostName = "wakamo-wsl-nixos";
+
   #wsl.enable = true;
   #wsl.defaultUser = "mimikun";
 
